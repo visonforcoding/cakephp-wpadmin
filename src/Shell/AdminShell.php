@@ -20,9 +20,10 @@ class AdminShell extends Shell {
      * @return bool|int Success or error code.
      */
     public function main() {
-        $this->out('Hello world.Welcome use visonforcoding Admin Plugin');
-        $this->out('I am your admin helper');
-        $this->out("You can create a superadmin by use command 'create_super_admin username'");
+        $this->info('Hello world.Welcome use visonforcoding Admin Plugin');
+        $this->info('I am your admin helper');
+        $this->info("You can create a superadmin by use command '"
+                . "bin/cake admin create_super_admin'");
     }
 
     public function createSuperAdmin() {

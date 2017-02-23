@@ -38,9 +38,9 @@
                                     <?php if (!empty($this->request->session()->read('User.admin.avatar'))): ?>
                                         <?php $avatar = $this->request->session()->read('User.admin.avatar'); ?>
                                     <?php else: ?>
-                                        <?php $avatar = '/wpadmin/img/avatar/avatar.jpg'; ?>
+                                        <?php $avatar = '/wpadmin/img/avatar/me.jpg'; ?>
                                     <?php endif; ?>
-                                    <img src="<?= $avatar; ?>" alt="Mika Sokeil" class="img-circle">
+                                    <img src="<?= $avatar; ?>" alt="曹麦穗" class="img-circle">
                                 </span>
                                 <b class="caret"></b>
                             </a>

@@ -24,7 +24,7 @@ class AdminmsgTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('lm_adminmsg');
+        $this->table('wp_adminmsg');
         $this->displayField('id');
         $this->primaryKey('id');
     }

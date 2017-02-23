@@ -30,7 +30,7 @@ class ActionlogTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('lm_actionlog');
+        $this->table('wp_actionlog');
         $this->displayField('id');
         $this->primaryKey('id');
     }

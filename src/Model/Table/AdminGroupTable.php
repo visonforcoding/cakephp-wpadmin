@@ -33,7 +33,7 @@ class AdminGroupTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('lm_admin_group');
+        $this->table('wp_admin_group');
         $this->displayField('id');
         $this->primaryKey('id');
 

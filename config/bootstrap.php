@@ -56,7 +56,7 @@ if (PHP_SAPI === 'cli') {
                 $menu->is_menu = 1;
                 $menu->pid = 1;
                 $menuTable->save($menu);
-                debug(\Cake\Cache\Cache::delete('admin_menus'));
+                //debug(\Cake\Cache\Cache::delete('admin_menus'));
             }
         }
     });

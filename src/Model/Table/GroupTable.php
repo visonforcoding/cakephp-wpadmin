@@ -23,7 +23,7 @@ class GroupTable extends Table {
     public function initialize(array $config) {
         parent::initialize($config);
 
-        $this->table('lm_group');
+        $this->table('wp_group');
         $this->alias('g');
         $this->displayField('name');
         $this->hasMany('Admin', [

@@ -6,7 +6,7 @@ class Initial extends AbstractMigration
     public function up()
     {
 
-        $this->table('lm_actionlog')
+        $this->table('wp_actionlog')
             ->addColumn('url', 'string', [
                 'comment' => '请求地址',
                 'default' => null,
@@ -75,7 +75,7 @@ class Initial extends AbstractMigration
             ])
             ->create();
 
-        $this->table('lm_admin')
+        $this->table('wp_admin')
             ->addColumn('username', 'string', [
                 'comment' => '用户名',
                 'default' => null,
@@ -126,7 +126,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('lm_admin_group')
+        $this->table('wp_admin_group')
             ->addColumn('admin_id', 'integer', [
                 'comment' => '管理员',
                 'default' => null,
@@ -148,7 +148,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('lm_group')
+        $this->table('wp_group')
             ->addColumn('name', 'string', [
                 'comment' => '群组名称',
                 'default' => null,
@@ -181,7 +181,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('lm_group_menu')
+        $this->table('wp_group_menu')
             ->addColumn('group_id', 'integer', [
                 'comment' => '群组',
                 'default' => 0,
@@ -203,7 +203,7 @@ class Initial extends AbstractMigration
             )
             ->create();
 
-        $this->table('lm_menu')
+        $this->table('wp_menu')
             ->addColumn('name', 'string', [
                 'comment' => '节点名称',
                 'default' => null,
@@ -257,11 +257,11 @@ class Initial extends AbstractMigration
 
     public function down()
     {
-        $this->dropTable('lm_actionlog');
-        $this->dropTable('lm_admin');
-        $this->dropTable('lm_admin_group');
-        $this->dropTable('lm_group');
-        $this->dropTable('lm_group_menu');
-        $this->dropTable('lm_menu');
+        $this->dropTable('wp_actionlog');
+        $this->dropTable('wp_admin');
+        $this->dropTable('wp_admin_group');
+        $this->dropTable('wp_group');
+        $this->dropTable('wp_group_menu');
+        $this->dropTable('wp_menu');
     }
 }

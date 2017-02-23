@@ -26,7 +26,7 @@ class GroupMenuTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('lm_group_menu');
+        $this->table('wp_group_menu');
         $this->displayField('id');
         $this->primaryKey('id');
 

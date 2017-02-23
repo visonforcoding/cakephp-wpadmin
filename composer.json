@@ -1,5 +1,5 @@
 {
-    "name": "your-name-here/Wpadmin",
+    "name": "visonforcoding/Wpadmin",
     "description": "Wpadmin plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {

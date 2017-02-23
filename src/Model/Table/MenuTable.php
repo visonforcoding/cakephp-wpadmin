@@ -23,7 +23,7 @@ class MenuTable extends Table {
     public function initialize(array $config) {
         parent::initialize($config);
 
-        $this->table('lm_menu');
+        $this->table('wp_menu');
         $this->displayField('name');
         $this->primaryKey('id');
         $this->belongsToMany('g', [

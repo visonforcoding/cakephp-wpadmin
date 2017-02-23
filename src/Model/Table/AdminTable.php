@@ -29,18 +29,18 @@ class AdminTable extends Table {
     public function initialize(array $config) {
         parent::initialize($config);
 
-        $this->table('lm_admin');
+        $this->table('wp_admin');
         $this->displayField('username');
         $this->primaryKey('id');
         $this->belongsToMany('g', [
             'className' => 'Wpadmin.Group',
-            'joinTable' => 'lm_admin_group',
+            'joinTable' => 'wp_admin_group',
             'foreignKey' => 'admin_id',
             'targetForeignKey' => 'group_id'
         ]);
         $this->belongsToMany('Menus', [
             'className' => 'Wpadmin.Menu',
-            'joinTable' => 'lm_admin_menu',
+            'joinTable' => 'wp_admin_menu',
             'foreignKey' => 'admin_id',
             'targetForeignKey' => 'menu_id'
         ]);
