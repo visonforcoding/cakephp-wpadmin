@@ -1,22 +1,22 @@
 {
-    "name": "visonforcoding/cakephp-wpadmin",
-    "description": "Wpadmin plugin for CakePHP",
+    "name": "visonforcoding/Cakephp-wpadmin",
+    "description": "Cakephp-wpadmin plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
-        "php": ">=5.4.16",
-        "cakephp/cakephp": "~3.0"
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.3.2 <4.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
     },
     "autoload": {
         "psr-4": {
-            "Wpadmin\\": "src"
+            "Cakephp-wpadmin\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wpadmin\\Test\\": "tests",
+            "Cakephp-wpadmin\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }
