@@ -1,5 +1,5 @@
 {
-    "name": "visonforcoding/Cakephp-wpadmin",
+    "name": "visonforcoding/cakephp-wpadmin",
     "description": "Cakephp-wpadmin plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
