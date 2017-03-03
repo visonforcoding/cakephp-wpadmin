@@ -17,8 +17,14 @@ class AdminController extends AppController {
      * @return void
      */
     public function index() {
-//        var_dump($this->Admin->find()->hydrate(false)->contain('g')->first());
-        $this->set('admin', $this->Admin);
+        $this->set([
+            'menu' => $this->Admin,
+            'pageTitle' => '管理员管理',
+            'bread' => [
+                'first' => ['name' => '系统管理'],
+                'second' => ['name' => '管理员管理'],
+            ],
+        ]);
     }
 
     /**
