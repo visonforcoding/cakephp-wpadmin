@@ -28,17 +28,11 @@ class MenuTable extends Table {
         $this->primaryKey('id');
         $this->belongsToMany('g', [
             'className' => 'Wpadmin.Group',
-            'joinTable' => 'group_menu',
+            'joinTable' => 'wp_group_menu',
             'foreignKey' => 'menu_id',
             'targetForeignKey' => 'group_id'
         ]);
         
-        $this->belongsToMany('Admins', [
-            'className' => 'Wpadmin.Admin',
-            'joinTable' => 'admin_menu',
-            'foreignKey' => 'menu_id',
-            'targetForeignKey' => 'admin_id'
-        ]);
     }
 
     /**

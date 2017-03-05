@@ -138,7 +138,7 @@
                             type: 'post',
                             data: {id: id},
                             dataType: 'json',
-                            url: '/wpadmin/menu/delete',
+                            url: '<?=PROJ_PREFIX?>/menu/delete',
                             success: function (res) {
                                 layer.msg(res.msg);
                                 if (res.status) {
